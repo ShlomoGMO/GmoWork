@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmoTest.MiddleTier", "GmoTest.MiddleTier\GmoTest.MiddleTier.csproj", "{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GmoTest.MiddleTier", "GmoTest.MiddleTier\GmoTest.MiddleTier.csproj", "{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmoTest.MiddleTier.Test", "GmoTest.MiddleTier.Test\GmoTest.MiddleTier.Test.csproj", "{917A03F3-4CDE-4A61-A529-2B860A14BA50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GmoTest.MiddleTier.Test", "GmoTest.MiddleTier.Test\GmoTest.MiddleTier.Test.csproj", "{917A03F3-4CDE-4A61-A529-2B860A14BA50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmoTest.Wpf", "GmoTest.Wpf\GmoTest.Wpf.csproj", "{F9BA7686-A9C8-4224-B4B9-CB3D87D83969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9BA7686-A9C8-4224-B4B9-CB3D87D83969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BA7686-A9C8-4224-B4B9-CB3D87D83969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BA7686-A9C8-4224-B4B9-CB3D87D83969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BA7686-A9C8-4224-B4B9-CB3D87D83969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
