@@ -21,7 +21,7 @@ namespace GmoTest.MiddleTier.Test
         [TestMethod]
         public void Test_2()
         {
-            Assert.AreEqual(2m, Fibonnaci.Fib(1));
+            Assert.AreEqual(1m, Fibonnaci.Fib(1));
         }
 
         [TestMethod]
