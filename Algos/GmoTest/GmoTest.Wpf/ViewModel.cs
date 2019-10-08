@@ -13,22 +13,22 @@ namespace GmoTest.Wpf
     {
         public MainViewModel()
         {
+            Numbers = new ObservableCollection<NumberViewModel>();
             var o = Observable.Generate(
                     new Random(),
                     _ => true,
                     r => r,
                     r => r.Next(1, 100),
-                    r => TimeSpan.FromSeconds(r.Next(1, 11))
+                    r => TimeSpan.FromSeconds((r.NextDouble() * 9) + 1) //A random range between 1-10 
                 )
                 .Timestamp()
                 .Select((i, index) => (i, index))
                 .ObserveOnDispatcher()
                 .Subscribe(t =>
                 {
-                    var nvm = new NumberViewModel(t.i.Value, t.i.Timestamp.DateTime);
+                    var nvm = new NumberViewModel(t.i.Value, t.i.Timestamp.LocalDateTime);
                     Numbers.Insert(0, nvm);
                     Count = t.index + 1;    //because zero based
-                    Debug.Print(t.i.Value.ToString());
                 });
         }
 
@@ -41,10 +41,10 @@ namespace GmoTest.Wpf
         public NumberViewModel(int number, DateTime timeProduced)
         {
             this.Number = number;
-            this.TimeProduced = timeProduced;
+            this.TimeProduced = timeProduced.ToString("h:mm:ss.ff");
         }
 
         public int Number { get; }
-        public DateTime TimeProduced { get; }
+        public string TimeProduced { get; }
     }
 }

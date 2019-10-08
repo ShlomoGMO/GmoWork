@@ -23,6 +23,7 @@ namespace GmoTest.Wpf
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
         }
     }
 }

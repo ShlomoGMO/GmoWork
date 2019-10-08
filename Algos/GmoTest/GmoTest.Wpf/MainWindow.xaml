@@ -5,15 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GmoTest.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        DataContext="{Binding mainVm}"
+        Title="Random Numbers" Height="450" Width="500"
         >
-    <Window.Resources>
-        <local:MainViewModel x:Key="mainVm" />
-    </Window.Resources>
     <Grid>
-        <ListBox ItemsSource="{Binding Numbers}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Numbers}" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Beige" BorderThickness="1" Margin="2">
+                        <Grid Height="30">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Number}" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Column="0"/>
+                            <TextBlock Text="{Binding TimeProduced}" FontStyle="Italic" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
 
     </Grid>
