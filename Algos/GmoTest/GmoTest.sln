@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmoTest.MiddleTier", "GmoTest.MiddleTier\GmoTest.MiddleTier.csproj", "{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmoTest.MiddleTier.Test", "GmoTest.MiddleTier.Test\GmoTest.MiddleTier.Test.csproj", "{917A03F3-4CDE-4A61-A529-2B860A14BA50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79AF2F49-4C5E-4A88-A7D7-D6DFFA3C9673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917A03F3-4CDE-4A61-A529-2B860A14BA50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB765BE9-A3FA-425B-9365-4632B0AA78F2}
+	EndGlobalSection
+EndGlobal
